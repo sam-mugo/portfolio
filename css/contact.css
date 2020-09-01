@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Neue', cursive;
+    
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
+}
+nav {
+    
+    padding-top: 30px;
+    position: absolute;
+    
+    width: 100vw;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    
+    list-style: none;
+    color: black;
+    z-index: 1;
+}
+.nav-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    border-bottom: #1061c1 2px solid;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 150px;
+
+    
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100vw;
+}
+.intro {
+    text-align: center;
+}
+.center-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+img {
+    width: 600px;
+    height: 400px;
+    align-items: left;
+}
+#contact {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    
+    margin-right:50px;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.social-links {
+    margin-top: 20px;
+    
+}
+.social-links li {
+    list-style: none;
+    display: inline-block;
+}
+.social-links a {
+    text-decoration: none;
+    color: #9933FF;
+    font-size: 40px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    
+    background-color: #9933FF;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+}
+#contact:hover {
+    cursor: pointer;
+    
+
+}
+.social-links:hover {
+    cursor: pointer;
+}
+
+#contact:before, #contact:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+ 
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+#contact:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+.email i {
+    color: #9933FF;
+    font-size: 12px;
+    padding-right: 5px;
+}
+#phone i {
+    color: #9933FF;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-items a {
+        font-size: 15px;
+    }
+    .container {
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+    
+
+    }
+    .center-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact {
+        margin-top: 70px;
+        width: 280px;
+        height: 160px;
+        margin: auto;
+    }
+    .main {
+        height: 100%;
+        display: flex;
+        flex-direction: column ;
+        
+    }
+    img {
+        width: 250px;
+        height: 250px;
+    }
+    button a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    
+    .main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .center-main {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 350px;
+        height: 350px;
+    }
+    #contact {
+        width: 250px;
+        margin-left: 65px;
+    }
+}
+@media screen and (max-width: 414px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        margin-top: 150px;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .nav-items a {
+        font-size: 15px;
+    }
+    .center-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact {
+        margin-top: auto;
+        width: 280px;
+        margin: auto;
+    }
+    .main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    img {
+        width: 250px;
+        height: 250px;
+    }
+    button a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width: 320px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .intro h1 {
+        font-size: 25px;
+    }
+    .center-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact {
+        margin-top: 30px;
+        width: 230px;
+        height: 140px;
+    }
+    .main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .social-links i {
+        font-size: 35px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    button a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .container {
+        margin-top: 110px;
+    }
+}
+ 

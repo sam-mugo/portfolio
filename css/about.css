@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+nav {
+    padding-top: 30px;
+    
+}
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.nav-items li {
+    list-style: none;
+}
+.nav-items a{
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+.nav-link:hover {
+    border-bottom: #1061c1 2px solid;
+    cursor: pointer;
+}
+.container {
+    
+    margin-top: 50px;
+    width: 100vw;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.edu-intro {
+    color: #1061c1;
+    border-bottom: solid 2px black;
+}
+.intro-text {
+    width: 650px;
+}
+.into {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.school {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+}
+.sch {
+    font-weight: 400;
+}
+.year {
+    display: flex;
+    flex-direction: column;
+}
+.period {
+    margin-left: 15px;
+}
+
+.degree {
+    text-align: right;
+}
+p {
+    text-align: left;
+    font-size: 25px;
+}
+span a {
+    color: #1061c1;
+    text-decoration: none;
+}
+.skill-cards {
+    display: flex;
+    flex-direction: row;
+}
+.skill-cards h1 {
+    color: #1061c1;
+    font-size: 20px;
+}
+.tech-stack {
+    margin-right: 30px;
+    background-color: whitesmoke;
+    height: 160px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tech-stack li {
+    list-style: none;
+}
+.skills {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.skills li {
+    list-style: none;
+}
+.tech-stack, .skills {
+    box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
+}
+
+
+
+
+@media screen and (max-width: 655px) {
+        .container {
+            margin-top: 150px;
+        }
+        .nav-items a {
+            font-size: 18px;
+        }
+        .intro {
+            font-size: 25px;
+        }
+        .intro-text {
+            width: 350px;
+            font-size: 10px;
+        }
+        .edu-intro {
+            font-size: 25px;
+        }
+        .edu {
+            width: 300px;
+            margin-top: 60px;
+        }
+        .school {
+            display: flex;
+            flex-direction: column;
+        }
+        .skill-cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .tech-stack {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+        .skills {
+            height: 150px;
+        }
+    
+    }
+  
+    
+    
+    
+
+@media screen and (max-width: 650px) {
+
+    .container {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .intro {
+        font-size: 20px;
+    }
+    .intro-text {
+        width: 450px;
+        font-size: 10px;
+
+    }
+    .edu {
+        width: 400px;
+        margin-top: 20px;
+    }
+    .school {
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tech-stack {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    .skills {
+        height: 150px;
+    }
+}
+    
+@media screen and (max-width: 414px) {
+    nav {
+        margin-bottom: 150px;
+    }
+    .nav-items a {
+        font-size: 18px;
+    }
+    .intro {
+        font-size: 25px;
+    }
+    .intro-text {
+        width: 350px;
+        font-size: 10px;
+    }
+    .edu-intro {
+        font-size: 25px;
+    }
+    .edu {
+        width: 300px;
+        margin-top: 60px;
+    }
+    .school {
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tech-stack {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    .skills {
+        height: 150px;
+    }
+
+}
+    
+@media screen and (max-width: 380px) {
+    .container {
+        margin-top: 150px;
+    }
+    .nav-items a {
+        font-size: 15px;
+    }
+    .intro {
+        font-size: 23px;
+    }
+    .intro-text {
+        width: 350px;
+        
+    }
+    .edu-intro {
+        font-size: 25px;
+    }
+    .edu {
+        width: 340px;
+        margin-top: 70px;
+    }
+    .school {
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tech-stack {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    .skills {
+        height: 150px;
+    }
+    
+   
+}
+@media screen and (max-width: 360px) {
+    nav {
+        margin-bottom: 100px;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    nav {
+        margin-bottom: 100px;
+    }
+    .intro {
+        font-size: 25px;
+    }
+
+}
+@media screen and (max-width: 330px) {
+    .container {
+        margin-top: 150px;
+
+    }
+    .intro-text {
+        width: 290px;
+        font-size: 10px;
+        
+
+    }
+    .edu {
+        width: 280px;
+        margin-top: 20px;
+    }
+    .school {
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tech-stack {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    .skills {
+        height: 130px;
+    }
+    
+    
+}

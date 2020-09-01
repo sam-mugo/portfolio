@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
+    
+}
+nav {
+    opacity: 1;
+    padding-top: 30px;
+    
+    width: 100vw;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    
+    list-style: none;
+    color: rgb(7, 6, 0);
+    z-index: 1;
+}
+.nav-items a {
+    text-decoration: none;
+    color: rgb(7, 6, 0);
+    font-family: 'Comic Neue', cursive;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    border-bottom: #1061c1 2px solid;
+    cursor: pointer;
+}
+.frontend {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.project-card {
+    height: 250px;
+    width: 300px;
+    background-color: #195e83;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: rgb(19, 9, 9);
+    
+}
+.project-card h1 {
+    color: gold;
+    text-align: center;
+}
+.project-card {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+img {
+    height: 150px;
+    width: 100%;
+}
+.project-links {
+    text-align: center;
+    color: white; 
+}
+.project-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.project-links:hover {
+    cursor: pointer;
+}
+.link-icon {
+    font-size: 15px;
+    color: tomato;
+}
+.tech {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.css {
+    border: gold 2px solid;
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+}
+.html {
+    border: #721f92 2px solid;
+    background-color: #721f92;
+    color: white;
+    border-radius: 5px;
+}
+.js {
+    border: #082080 2px solid;
+    background-color: #082080;
+    color: white;
+    border-radius: 5px;
+
+}
+
+
+@media screen and (max-width: 695px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-card {
+        margin-bottom: 20px;
+    }
+    
+    
+    
+}
+@media screen and (max-width: 595px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-card {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .nav-items a {
+        font-size: 15px;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-card {
+        margin-bottom: 20px;
+    }
+   
+}
+@media screen and (max-width: 330px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-card {
+        margin-bottom: 20px;
+        width: 270px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .nav-items a {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .nav-items a {
+        font-size: 15px;
+    }
+}

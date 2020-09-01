@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(124,56,170);
+    background: linear-gradient(90deg, rgba(124,56,170,1) 19%, rgba(114,69,252,1) 93%);
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    opacity: 1;
+    padding-top: 30px;
+    position: absolute;
+    
+    width: 100vw;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    
+    list-style: none;
+    color: cornsilk;
+    z-index: 1;
+}
+.nav-items a {
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+    border-bottom: #1061c1 2px solid;
+    cursor: pointer;
+}
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100vw;
+    text-align: center;  
+}
+h1 {
+    color: coral;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 40px;
+    color: #9e9ef7;
+    
+       
+}
+#name {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    
+}
+#name > h2:first-of-type {
+    color: coral;
+}
+#name > h2:last-of-type {
+    margin-left: 15px;
+    
+    color: blanchedalmond;
+}
+.intro-position {
+    font-family: "lora-regular", serif;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    color: cornsilk;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    
+}
+.intro-position span:first-child::before {
+    content: "|";
+    display: inline-block;
+    color: coral;
+}
+.intro-position span:first-child::after {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    color: coral;
+}
+.intro-position span:last-child::after {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    color: coral;
+
+}
+#cta {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#cta h1{
+    color: white;
+    font-size: 12px;
+}
+.glow-on-hover  {
+    width: 180px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    
+}
+.glow-on-hover a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: transparent;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d89cf6;
+
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media screen and (max-width: 865px) {
+    h2 {
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width: 595px) {
+    h2 {
+        font-size: 20px;
+    }
+    .intro-position {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-position span:last-child::before {
+        content: "|";
+        color: coral;
+    }
+}
+@media screen and (max-width: 380px) {
+   h2 {
+       font-size: 32px;
+       text-align: center;
+   }
+   h1 {
+       text-align: center;
+       font-size: 25px;
+   }
+   .intro-position {
+    display: flex;
+    flex-direction: column;
+    }
+    .intro-position span:last-child::before {
+        content: "|";
+        color: coral;
+    }
+   
+}
+@media screen and (max-width: 330px) {
+    .intro-position {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+
+
+
